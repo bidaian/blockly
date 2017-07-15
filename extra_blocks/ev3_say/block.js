@@ -1,0 +1,83 @@
+goog.require('Blockly.Blocks');
+
+Blockly.Blocks['ev3_say'] = {
+  init : function() {
+      var list_languages = [
+        ['language afrikaans','afrikaans'],
+        ['language albanian','albanian'],
+        ['language aragonese','aragonese'],
+        ['language armenian','armenian'],
+        ['language armenian-west','armenian-west'],
+        ['language bosnian','bosnian'],
+        ['language brazil','brazil'],
+        ['language bulgarian','bulgarian'],
+        ['language cantonese','cantonese'],
+        ['language catalan','catalan'],
+        ['language croatian','croatian'],
+        ['language czech','czech'],
+        ['language danish','danish'],
+        ['language default','default'],
+        ['language dutch','dutch'],
+        ['language english','english'],
+        ['language english-north','english-north'],
+        ['language english_rp','english_rp'],
+        ['language english-us','english-us'],
+        ['language english_wmids','english_wmids'],
+        ['language en-scottish','en-scottish'],
+        ['language en-westindies','en-westindies'],
+        ['language esperanto','esperanto'],
+        ['language estonian','estonian'],
+        ['language finnish','finnish'],
+        ['language french-Belgium','french-Belgium'],
+        ['language french','french'],
+        ['language georgian','georgian'],
+        ['language german','german'],
+        ['language greek-ancient','greek-ancient'],
+        ['language greek','greek'],
+        ['language hindi','hindi'],
+        ['language hungarian','hungarian'],
+        ['language icelandic','icelandic'],
+        ['language indonesian','indonesian'],
+        ['language irish-gaeilge','irish-gaeilge'],
+        ['language italian','italian'],
+        ['language kannada','kannada'],
+        ['language kurdish','kurdish'],
+        ['language latin','latin'],
+        ['language latvian','latvian'],
+        ['language lingua_franca_nova','lingua_franca_nova'],
+        ['language lithuanian','lithuanian'],
+        ['language lojban','lojban'],
+        ['language macedonian','macedonian'],
+        ['language malayalam','malayalam'],
+        ['language malay','malay'],
+        ['language Mandarin','Mandarin'],
+        ['language nepali','nepali'],
+        ['language norwegian','norwegian'],
+        ['language persian','persian'],
+        ['language persian-pinglish','persian-pinglish'],
+        ['language polish','polish'],
+        ['language portugal','portugal'],
+        ['language punjabi','punjabi'],
+        ['language romanian','romanian'],
+        ['language russian','russian'],
+        ['language serbian','serbian'],
+        ['language slovak','slovak'],
+        ['language spanish-latin-am','spanish-latin-am'],
+        ['language spanish','spanish'],
+        ['language swahili-test','swahili-test'],
+        ['language swedish','swedish'],
+        ['language tamil','tamil'],
+        ['language turkish','turkish'],
+        ['language vietnam_hue','vietnam_hue'],
+        ['language vietnam_sgn','vietnam_sgn'],
+        ['language vietnam','vietnam'],
+        ['language welsh','welsh']
+      ];
+      var language = new Blockly.FieldDropdown(list_languages);
+
+      this.appendValueInput('SENTENCE').appendField("say").appendField(language, 'LANGUAGE');
+
+      this.setPreviousStatement(true);
+      this.setNextStatement(true);
+  }
+};
