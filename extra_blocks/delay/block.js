@@ -5,6 +5,7 @@ goog.require('Blockly.Constants.Loops');
 
 
 /**
+ *
  * Common HSV hue for all blocks in this category.
  * Should be the same as Blockly.Msg.LOOPS_HUEd
  * @readonly
