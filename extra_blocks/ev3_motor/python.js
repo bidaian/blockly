@@ -1,6 +1,6 @@
 'use strict';
 
-goog.provide('Blockly.Python.ev3_say');
+goog.provide('Blockly.Python.ev3_motor');
 
 goog.require('Blockly.Python');
 
@@ -25,7 +25,7 @@ Blockly.Python['ev3_motor_stop'] = function(block) {
 
   Blockly.Python.definitions_['import_ev3dev'] = 'import ev3dev.ev3 as ev3';
 
-  var code = `m = ev3.Motor("${m}"")\n`;
+  var code = `m = ev3.Motor("${m}")\n`;
   code += "m.stop()\n";
 
   return code;

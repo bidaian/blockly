@@ -34,7 +34,7 @@ Blockly.Python['controls_delay'] = function(block) {
 
   Blockly.Python.definitions_['import_time'] = 'import time';
 
-  var code = `sleep(${d})\n`;
+  var code = `time.sleep(${d})\n`;
 
   return code;
 };
