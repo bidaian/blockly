@@ -538,7 +538,7 @@ Code.discard = function() {
 Code.sendCode = function() {
   var xhr = new XMLHttpRequest();
 
-xhr.open("POST", "http://localhost:8000", true);
+xhr.open("POST", "http://192.168.2.151:8000", true);
 xhr.setRequestHeader("Content-Type", "data/binary; boundary=abc");
 xhr.setRequestHeader("Content-Disposition", 'name="file"; filename="miarchivo.txt"');
 xhr.send(Blockly.Python.workspaceToCode(Blockly.workspace));

@@ -14,23 +14,11 @@ Blockly.Constants.Loops.HUE = 120;
 /** @deprecated Use Blockly.Constants.Loops.HUE */
 Blockly.Blocks.loops.HUE = Blockly.Constants.Loops.HUE;
 
-Blockly.defineBlocksWithJsonArray([  // BEGIN JSON EXTRACT
-  // Block for thread with wait (internal number).
-  {
-    "type": "controls_delay",
-    "message0": "%{BKY_CONTROLS_THREAD_TITLE}",
-    "args0": [{
-      "type": "input_value",
-      "name": "DELAY",
-      "check": "Number",
-    }],
-    "message1": "%{BKY_CONTROLS_THREAD_INPUT_DO} %1",
-    "args1": [{
-      "type": "input_statement",
-      "name": "DO"
-    }],
-    "colour": "%{BKY_LOOPS_HUE}",
-    "tooltip": "%{BKY_CONTROLS_THREAD_TOOLTIP}",
-    "helpUrl": "%{BKY_CONTROLS_THREAD_HELPURL}"
+Blockly.Blocks['controls_delay'] = {
+  init : function() {
+    this.appendValueInput("DELAY").appendField(Blockly.Msg.CONTROLS_DELAY);
+    this.setPreviousStatement(true, null);
+    this.setNextStatement(true, null);
+    this.setTooltip(Blockly.Msg.CONTROLS_DELAY_TOOLTIP);
   }
-]);  // END JSON EXTRACT (Do not delete this comment.)
+};
