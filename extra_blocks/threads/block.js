@@ -32,6 +32,5 @@ Blockly.defineBlocksWithJsonArray([  // BEGIN JSON EXTRACT
     }],
     "colour": "%{BKY_LOOPS_HUE}",
     "tooltip": "%{BKY_CONTROLS_THREAD_TOOLTIP}",
-    "helpUrl": "%{BKY_CONTROLS_THREAD_HELPURL}"
   }
 ]);  // END JSON EXTRACT (Do not delete this comment.)
