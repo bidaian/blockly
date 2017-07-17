@@ -17,8 +17,8 @@ Blockly.Python['ev3_motor_run_linked_timed'] = function(block) {
 
   var code = `m0 = ev3.Motor("${m}")\n`;
   code += `m1 = ev3.Motor("${a}")\n`;
-  code += `speed0 = (m0.max_speed * ${p}) / 100\n`;
-  code += `speed1 = (m1.max_speed * ${p}) / 100 * (-1 if "${i}" == "TRUE" else 1)\n`;
+  code += `speed0 = (m0.max_speed * (${p})) / 100\n`;
+  code += `speed1 = (m1.max_speed * (${p})) / 100 * (-1 if "${i}" == "TRUE" else 1)\n`;
   code += `m0.run_timed(time_sp=${t},speed_sp=speed0)\n`;
   code += `m1.run_timed(time_sp=${t},speed_sp=speed1)\n`;
 
