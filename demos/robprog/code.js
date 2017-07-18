@@ -200,9 +200,11 @@ Code.bindClick = function(el, func) {
  * Load the Prettify CSS and JavaScript.
  */
 Code.importPrettify = function() {
+  /*
   var script = document.createElement('script');
   script.setAttribute('src', 'https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js');
   document.head.appendChild(script);
+  */
 };
 
 /**
@@ -531,12 +533,12 @@ Code.discard = function() {
     }
   }
 };
-
 /**
  * Send the program.
  */
 Code.sendCode = function() {
   var xhr = new XMLHttpRequest();
+
 
 xhr.open("POST", "http://192.168.2.151:8000", true);
 xhr.setRequestHeader("Content-Type", "data/binary; boundary=abc");
