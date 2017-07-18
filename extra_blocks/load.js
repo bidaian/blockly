@@ -6,12 +6,12 @@ var params = new URLSearchParams(window.location.search.slice(1));
 for (block of blocks) {
   var script = document.createElement('script');
   script.type = 'text/javascript';
-  script.src = `../../extra_blocks/${block}/block.js`;
+  script.src = `../../extra_blocks/${block}/messages.js`;
   document.head.appendChild(script);
 
   script = document.createElement('script');
   script.type = 'text/javascript';
-  script.src = `../../extra_blocks/${block}/messages.js`;
+  script.src = `../../extra_blocks/${block}/block.js`;
   document.head.appendChild(script);
 
   if (params.get('lang'))
