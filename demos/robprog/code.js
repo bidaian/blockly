@@ -430,6 +430,7 @@ Code.init = function() {
   Code.bindClick('sendButton',
       function() {Code.sendCode();});
   Code.bindClick('runButton', Code.runJS);
+  Code.bindClick('saveButton', Code.downloadCode);
   // Disable the link button if page isn't backed by App Engine storage.
   var linkButton = document.getElementById('linkButton');
   if ('BlocklyStorage' in window) {
@@ -546,6 +547,11 @@ xhr.setRequestHeader("Content-Type", "data/binary; boundary=abc");
 xhr.setRequestHeader("Content-Disposition", 'name="file"; filename="miarchivo.txt"');
 xhr.send(Blockly.Python.workspaceToCode(Blockly.workspace));
 
+};
+
+Code.downloadCode = function() {
+  var uriContent = "data:application/text-plain," + encodeURIComponent(Blockly.Python.workspaceToCode(Blockly.workspace));
+  newWindow = window.open(uriContent, 'neuesDokument');
 };
 
 // Load the Code demo's language strings.
