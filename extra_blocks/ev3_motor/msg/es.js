@@ -5,5 +5,5 @@ Blockly.Msg.MOTOR_ON_TOOLTIP = 'enciende el motor';
 Blockly.Msg.MOTOR_OFF_TOOLTIP = 'detiene el motor';
 Blockly.Msg.MOTOR_SPEED = 'velocidad (%)';
 Blockly.Msg.MOTOR_TIME = 'tiempo (ms)';
-Blockly.Msg.MOTORS_INVERTED = 'invertido?';
-Blockly.Msg.EV3_LINKED_MOTORS = 'move motores a la vez';
+Blockly.Msg.MOTORS_INVERTED = '¿el segundo al revés?';
+Blockly.Msg.EV3_LINKED_MOTORS = 'mueve motores a la vez';
