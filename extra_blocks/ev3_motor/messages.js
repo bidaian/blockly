@@ -6,3 +6,4 @@ Blockly.Msg.MOTOR_OFF_TOOLTIP = 'stop the motor';
 Blockly.Msg.MOTOR_SPEED = 'speed (%)';
 Blockly.Msg.MOTOR_TIME = 'time (ms)';
 Blockly.Msg.MOTORS_INVERTED = 'inverted?';
+Blockly.Msg.EV3_LINKED_MOTORS = 'move at the same time';

@@ -14,7 +14,7 @@ Blockly.Blocks['ev3_motor_run_linked_timed'] = {
       };
       */
       additionalMotorPort.setValue('outB');
-      this.appendValueInput('MOTOR_POWER').appendField("move together")
+      this.appendValueInput('MOTOR_POWER').appendField(Blockly.Msg.EV3_LINKED_MOTORS)
       .appendField(motorPort, 'MOTOR_PORT')
       .appendField(additionalMotorPort,'ADDITIONAL_MOTOR_PORT')
       .appendField(Blockly.Msg.MOTOR_SPEED);

@@ -6,3 +6,4 @@ Blockly.Msg.MOTOR_OFF_TOOLTIP = 'haltigo de motoro';
 Blockly.Msg.MOTOR_SPEED = 'rapido (%)';
 Blockly.Msg.MOTOR_TIME = 'tempo (ms)';
 Blockly.Msg.MOTORS_INVERTED = 'ĉu inverse?';
+Blockly.Msg.EV3_LINKED_MOTORS = 'movi motorojn samtempe';
