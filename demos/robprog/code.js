@@ -41,6 +41,7 @@ Code.LANGUAGE_NAME = {
   'de': 'Deutsch',
   'el': 'Ελληνικά',
   'en': 'English',
+  'eo': 'Esperanto',
   'es': 'Español',
   'et': 'Eesti',
   'fa': 'فارسی',
