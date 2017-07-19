@@ -1,8 +1,3 @@
-Blockly.Msg.START_MOTOR_PORT = 'startigi motoron port';
-Blockly.Msg.STOP_MOTOR_PORT = 'haltigi motoron';
-Blockly.Msg.ON = 'je';
-Blockly.Msg.MOTOR_ON_TOOLTIP = 'ŝalto de motoro';
-Blockly.Msg.MOTOR_OFF_TOOLTIP = 'haltigo de motoro';
-Blockly.Msg.MOTOR_SPEED = 'rapido (%)';
-Blockly.Msg.MOTOR_TIME = 'tempo (ms)';
-Blockly.Msg.MOTORS_INVERTED = 'ĉu inverse?';
+Blockly.Msg.EV3_TOUCH_SENSOR = 'ĉu la sensilo en la ingo %1 estas premita?';
+Blockly.Msg.EV3_TOUCH_SENSOR_PORT_AUTOMATIC = 'aŭtomata';
+Blockly.Msg.EV3_TOUCH_SENSOR_TOOLTIP = 'tio kontrolas ĉu la tuŝsensilo estas premita';
