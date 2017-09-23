@@ -46,19 +46,20 @@ def follow_line():
       cv2.line(crop_img,(0,cy),(1280,cy),(255,0,0),1)
       cv2.drawContours(crop_img, contours, -1, (0,255,0), 1)
 
-      if cx >= 120:
-          return "<"
+      if cx >= 110:
+          info "<"
 
-      if cx < 120 and cx > 50:
-          return "="
+      if cx < 110 and cx > 60:
+          info "="
 
-      if cx <= 50:
-          return ">"
+      if cx <= 60:
+          info ">"
   else:
-      return "?"
+      info "?"
 
   #Display the resulting frame
   # cv2.imshow('frame',crop_img)
+  return info
 `;
 
   var code;
