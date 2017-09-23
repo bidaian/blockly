@@ -15,7 +15,7 @@
   <script src="../../lua_compressed.js"></script>
   <script src="../../dart_compressed.js"></script>
   <script src="../../extra_blocks/load.js"
-  data-extra-blocks="ev3_say:threads:delay:ev3_motor:ev3_sensor"
+  data-extra-blocks="ev3_camera_line_follower:ev3_say:threads:delay:ev3_motor:ev3_sensor"
   data-extra-blocks-generators="python"></script>
   <script src="code.js"></script>
 </head>
@@ -139,6 +139,8 @@
             <field name="TEXT">hello</field>
           </shadow>
         </value>
+      </block>
+      <block type="ev3_camera_line_follower">
       </block>
       <block type="controls_delay">
         <value name="DELAY">
